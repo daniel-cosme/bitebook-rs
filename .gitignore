@@ -1,30 +1,37 @@
-# Rust / Cargo
+```
+# Rust/Cargo
 target/
-**/*.rs.bk
-**/*.rs.swp
 Cargo.lock
+**/target/
 
-# WASM build artifacts
-*.wasm
-*.wat
-*.wast
+# WASM modules
+wasm_modules/*/target/
 
-# IDEs e editores
-.vscode/
-.idea/
-*.swp
-*.swo
+# Dependencies
+vendor/
 
-# OS arquivos
-.DS_Store
-Thumbs.db
+# Logs
+*.log
 
 # Environment
 .env
 .env.local
-.env.*.local
+.env.*
 
-# Node / frontend (se houver)
-node_modules/
-dist/
-build/
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# Build artifacts
+**/*.so
+**/*.dylib
+**/*.dll
+**/*.exe
+```

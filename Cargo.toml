@@ -1,0 +1,9 @@
+[workspace]
+members = ["backend", "wasm_modules/patients", "wasm_modules/appointments", "wasm_modules/payments"]
+resolver = "2"
+
+[profile.release]
+lto = true
+opt-level = "s"
+strip = true
+codegen-units = 1
